@@ -4,7 +4,7 @@
 > **Platform:** Kaggle
 > **Type:** Retrieval-Augmented Generation (RAG) · Multiple Choice QA · Thai NLP
 > **Final Score:** Public `0.71` · Private `0.82` · Leaderboard `+144` positions
-
+<img width="1195" height="173" alt="Image" src="https://github.com/user-attachments/assets/68927362-039c-4e84-b4f0-23c36ebfc4a3" />
 ---
 
 ## 📌 Overview
@@ -82,6 +82,8 @@ Hit an `IndexError: list index out of range` crash. The cause was that after reb
 
 ### Attempt 5 (Final) — Public Score: 0.71 · Private Score: 0.82
 Added two final improvements. First, **query expansion** — instead of retrieving using only the question, the query was expanded to include the first 4 content-specific answer choices (1–8). This gave BM25 more keywords to match against, especially for product names and specs. Second, **majority voting** — instead of relying on a single Thai LLM (`typhoon`), both `typhoon` and `openthaigpt` were queried for each question and the most common answer was selected. Final public score: 0.71. After the competition closed, the private leaderboard revealed a score of 0.82, with a leaderboard jump of +144 positions.
+
+<img width="861" height="73" alt="Image" src="https://github.com/user-attachments/assets/4f46ea3d-7ce8-446f-967b-ef7e14f53be4" />
 
 ---
 
